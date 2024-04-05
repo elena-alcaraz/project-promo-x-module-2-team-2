@@ -1,36 +1,45 @@
 <fieldset class="fild__section">
-     <article class="fill__head">
-       <legend>
+     <div class="fill__head">
+       <legend class="rellena">
        <img src="" alt="">
        <h2>RELLENA</h2>
       </legend>
-    </article>
+    </div>
 
-    <article class="personal_info">
+    <div class="info__personal">
+      
         <label for="name">Nombre completo</label>
         <input  id="name" type="text" name="fullname" placeholder="Ej: Ramón García">
+      
 
+      
         <label for="work">Puesto</label>
         <input id="work" type="text" name="position" placeholder="Ej: Full stack developer">
+     
 
+      
         <label for="">Imagen de perfil</label>
-        <input type="text">
-
+         <div class="fill__upload">
+           <button class="button__upload">Añadir imagen</button>
+           <input type="text">
+         </div>
+     
+      
         <label for="email">Email</label>
         <input  id="email" type="email" placeholder="Ej: ramon@gmail.com">
+      
 
         <label for="mobile">Teléfono</label>
-        <input id="mobile" type="number" name="telefono" placeholder="Ej: 555 555 555">
-        
+        <input id="mobile" type="tel" name="telefono" placeholder="Ej: 555 555 555">
+     
+       
         <label for="linkedin">Linkedin</label>
         <input id="linkedin"  type="text" placeholder="Ej:linkedin.com/in/Ramón">
+     
 
         <label for="github">GitHub</label>
         <input id="github" type="text" placeholder="Ej: @Ramon">
-
-    </article>
     
-     
+    </div>
     
-   
 </fieldset>
