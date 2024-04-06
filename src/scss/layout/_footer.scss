@@ -1,3 +1,17 @@
-p {
+.license {
     font-family: var(--brand-font);
+    color: var(--grisoscuro);
+    font-size: small;
+}
+
+.footer {
+    border-top: solid var(--grisclaro);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-adalab {
+    width: 140px;
+    padding: 10px;
+    margin-top: 5px;
 }
