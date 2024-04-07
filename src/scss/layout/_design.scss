@@ -22,6 +22,11 @@
     grid-template-columns: auto auto;
 }
 
+
+.colorsText {
+    padding-left: 15px;
+}
+
 .selectDesign {
     height: 200px;
     display: grid;
@@ -46,8 +51,8 @@
 
 .paletItemGrid {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    width: 100%;
+    grid-template-columns: 2fr 5fr;
+    height: 25px;
 }
 
 .paletItemGridFirst {
@@ -56,6 +61,42 @@
     align-items: center;
 }
 
-.colorsText {
-    padding-left: 15px;
+.columnsPalet {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+}
+
+.darkGreen {
+    background-color: #114e4e;
+}
+
+.dirtyBlue {
+    background-color: #438792;
+}
+
+.hospitalGreen {
+    background-color: #a2deaf;
+}
+.driedBlood {
+    background-color: #420101;
+}
+
+.rustyRed {
+    background-color: #bd1010;
+}
+
+.tomato {
+    background-color: #e95626;
+}
+
+.slate {
+    background-color: #3e5b65;
+}
+
+.faded {
+    background-color: #eab052;
+}
+
+.lightgreyblue {
+    background-color: #a0c0cf;
 }
