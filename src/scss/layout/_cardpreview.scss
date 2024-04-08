@@ -52,7 +52,27 @@
     }
     
     &__img {
-        
+        width: 100%;
     }
-      
 }
+      
+    .rrss {
+        width: 200px;
+        height: 30px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+
+        &__icons {
+            list-style: none;
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-around;
+
+            &--icon {
+                border: 3px solid var(--hospital-green);
+                padding: 5px 10px 5px 10px;
+                border-radius: 30px;
+            }
+                }
+    }
