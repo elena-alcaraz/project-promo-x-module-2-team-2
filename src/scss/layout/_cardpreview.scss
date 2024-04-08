@@ -51,32 +51,29 @@
         }
     }
     
-<<<<<<< HEAD
    
-=======
     &__img {
         width: 100%;
     }
 }
->>>>>>> f5b5661bb17a7654c73002772c1fac9e8b12410e
       
-    .rrss {
-        width: 200px;
-        height: 30px;
-        padding-top: 10px;
-        padding-bottom: 50px;
-        padding-left: 20px;
+.rrss {
+    width: 200px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
 
-        &__icons {
-            list-style: none;
-            display: flex; 
-            flex-direction: row;
-            justify-content: space-around;
+    &__icons {
+        list-style: none;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
 
-            &--icon {
-                border: 3px solid var(--hospital-green);
-                padding: 5px 10px 5px 10px;
-                border-radius: 30px;
-            }
-                }
+        &--icon {
+            border: 3px solid var(--hospital-green);
+            padding: 5px 10px 5px 10px;
+            border-radius: 30px;
+        }
     }
+ }
