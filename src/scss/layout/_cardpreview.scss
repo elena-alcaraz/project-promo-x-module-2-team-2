@@ -1,12 +1,58 @@
 .cardpreview {
     background-color: var(--silver);
     font-family: var(--brand-font);
+    padding: 38px 35px 40px 45px;
 }
 
 .resetbutton {
     display: flex;
-    padding: 6px;
+    padding: 4px 12px 5px 10px;
     align-items: center;
-    margin: solid white; 
+    justify-content: space-between;
+    border: solid white;
     background-color: var(--silver);
+    border-radius: 20px;
+    color: var(--grisoscuro);
+    margin-bottom: 20px;
+    
+
+    &__icon {
+        padding: 3px;
+    }
+
+    &__p {
+        padding: 3px;
+        font-family: var(--brand-font);
+    }
+}
+
+.card {
+    background-color: white;
+
+    &__info {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-left: 5px solid var(--verde-azul-oscuro);
+        padding-bottom: 20px;
+
+        &--name {
+            color: var(--verde-azul-oscuro);
+            margin-left: 20px;
+            font-weight: 600;
+            width: 206px;
+            
+            
+        }
+
+        &--description {
+            color: var(--grisoscuro);
+            font-weight: 400;
+            margin-left: 20px;
+        }
+    }
+    
+    &__img {
+        
+    }
+      
 }
