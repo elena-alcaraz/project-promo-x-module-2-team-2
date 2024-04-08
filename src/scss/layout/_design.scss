@@ -1,116 +1,126 @@
+.selectDesign {
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 25px;
+}
+
 .title {
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  text-align: center;
+  padding: 27px 20px;
 }
-.fa-regular{
-    color: #e17334;
-    font-size: 18px;
+
+.iconObj {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.fa-regular {
+  color: #e17334;
+  font-size: 18px;
+}
+
 .titleText {
-    text-align: left;
-    padding-left: 5px;
-    color: #54585a;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: var(--brand-font);
+  text-align: left;
+  padding-left: 5px;
+  color: #54585a;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--brand-font);
 }
+
+.chevronSolid {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .fa-solid {
-    color: #54585a;
-    width: 16px;
+  color: #54585a;
+  width: 16px;
+}
 
-}
-.chevronSolid{
-    padding-right: 28px;
-}
 .colors {
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: auto auto;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 
 .colorsText {
-    padding-left: 15px;
-    color: #54585a;
-    font-size: 14px;
-    font-family: var(--brand-font);
-}
-
-.selectDesign {
-    height: 200px;
-    display: grid;
-    grid-template-rows: 1fr 10fr;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-
+  color: #54585a;
+  font-size: 14px;
+  font-family: var(--brand-font);
 }
 
 .palet {
-    display: grid;
-    grid-template-rows: auto auto auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
 
 }
 
 .paletItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .paletItemGrid {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    height: 25px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  height: 25px;
 }
 
 .paletItemGridFirst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .columnsPalet {
-    display: grid;
-    grid-template-columns: 30px 30px 30px;
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
 }
 
 .darkGreen {
-    background-color: #114e4e;
+  background-color: #114e4e;
 }
 
 .dirtyBlue {
-    background-color: #438792;
+  background-color: #438792;
 }
 
 .hospitalGreen {
-    background-color: #a2deaf;
+  background-color: #a2deaf;
 }
+
 .driedBlood {
-    background-color: #420101;
+  background-color: #420101;
 }
 
 .rustyRed {
-    background-color: #bd1010;
+  background-color: #bd1010;
 }
 
 .tomato {
-    background-color: #e95626;
+  background-color: #e95626;
 }
 
 .slate {
-    background-color: #3e5b65;
+  background-color: #3e5b65;
 }
 
 .faded {
-    background-color: #eab052;
+  background-color: #eab052;
 }
 
 .lightgreyblue {
-    background-color: #a0c0cf;
+  background-color: #a0c0cf;
 }
