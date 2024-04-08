@@ -10,7 +10,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.fa-regular{
+    color: #e17334;
+    font-size: 18px;
+}
 .titleText {
     text-align: left;
     padding-left: 5px;
@@ -20,7 +23,7 @@
 }
 
 .colors {
-    background-color: lightcoral;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: auto auto;
 }
