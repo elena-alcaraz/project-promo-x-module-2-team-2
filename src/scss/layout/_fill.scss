@@ -1,18 +1,41 @@
 
-.rellena {
 
-    width: 100%;
+.fill {
+ padding: 10px 0 0;
+ margin: 0 20px;
+ border-top: solid 1px var(--gunmetal);
 
+} 
+
+form {
+  display: block;
+    
+}
+
+.fieldset {
+  border: none;
 }
 
 .fill__head {
+  
     display: flex;
-    flex: row;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--gunmetal);
+    font-family: var(--brand-font);
+
+ }
+
+.fill__head-tittle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 
-
 .info__personal {
+    font-family: var(--brand-font);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +43,11 @@
     margin-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+    color: var(--gunmetal);
+    width: 100vw;
+    
+
   
     label {
       padding-bottom: 5px;
@@ -37,13 +64,6 @@
         margin-bottom: 5px;
         padding-bottom: 10px;
     }
-}
-
-.rellena {
-
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .fill__upload {
