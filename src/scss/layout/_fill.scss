@@ -1,19 +1,15 @@
 
 
 .fill {
- padding: 10px 0 0;
- margin: 0 20px;
+ 
  border-top: solid 1px var(--gunmetal);
 
 } 
 
 form {
-  display: block;
+  
+    border: none;
     
-}
-
-.fieldset {
-  border: none;
 }
 
 .fill__head {
@@ -31,6 +27,16 @@ form {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.upDown {
+
+margin-right: 10px;
+padding-top: 10px;
 }
 
 
@@ -40,15 +46,10 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
+    padding: 20px 20px 20px 20px;
     color: var(--gunmetal);
-    width: 100vw;
     
-
-  
+   
     label {
       padding-bottom: 5px;
       color: #114e4e;
@@ -75,14 +76,13 @@ form {
     }
 }
 
+.image__button {
 
-.image__botton input {
-
-
-    .hidden {
-        display: none;
-    }
-   
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -93,5 +93,13 @@ form {
     color: white;
     border: none;
     border-radius: 2px;
+    z-index: 9999;
+    padding-left: 15px;
 }
 
+.preview {
+
+    border: solid 1px #a2deaf;
+    width: 30px;
+    height: 30px;
+}
