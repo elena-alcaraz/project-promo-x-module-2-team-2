@@ -1,7 +1,3 @@
-.border {
-    border: 1px solid black;
-}
-
 .title {
     background-color: #ffffff;
     display: grid;
@@ -22,8 +18,13 @@
     font-weight: 600;
     font-family: var(--brand-font);
 }
-.fa-solid{
-    color:#54585a ;
+.fa-solid {
+    color: #54585a;
+    width: 16px;
+
+}
+.chevronSolid{
+    padding-right: 28px;
 }
 .colors {
     background-color: #ffffff;
@@ -46,6 +47,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: none;
 
 }
 
