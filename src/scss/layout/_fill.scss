@@ -1,12 +1,17 @@
 
-.fill__head {
+.rellena {
 
-display: flex;
-flex-direction: row;
-margin-bottom: 20px;
-
+    width: 100%;
 
 }
+
+.fill__head {
+    display: flex;
+    flex: row;
+}
+
+
+
 .info__personal {
     display: flex;
     flex-direction: column;
