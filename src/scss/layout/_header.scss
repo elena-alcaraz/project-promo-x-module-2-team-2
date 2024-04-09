@@ -7,4 +7,8 @@
     &__image {
         width: 250px;
     }
+
+    @media screen and (width> 767px) {
+        justify-content: flex-start;
+    }
 }

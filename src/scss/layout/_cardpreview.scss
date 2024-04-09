@@ -17,7 +17,11 @@
     
 
     &__icon {
-        padding: 3px;
+        padding: 3px;   
+    }
+
+    &__icon::before{
+        color: var(--grisoscuro);
     }
 
     &__p {
@@ -28,26 +32,26 @@
 
 .card {
     background-color: white;
+    padding-top: 10px;
 
     &__info {
-        /* font-family: var(--montserrat); */
+        font-family: var(--montserrat);
+        line-height: 25px;
         margin-top: 20px;
-        padding-top: 20px;
-        border-left: 5px solid var(--verde-azul-oscuro);
-        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-left: 5px solid var(--dirty-blue);
 
         &--name {
             color: var(--verde-azul-oscuro);
+            font-size: 20px;
             margin-left: 20px;
-            font-weight: 600;
+            font-weight: 700;
             width: 206px;
-            
-            
         }
 
         &--description {
             color: var(--grisoscuro);
-            font-weight: 400;
+            font-weight: 500;
             margin-left: 20px;
         }
     }
@@ -69,11 +73,21 @@
         display: flex; 
         flex-direction: row;
         justify-content: space-around;
-
+    
         &--icon {
-            border: 3px solid var(--hospital-green);
+            text-align: center;
+            border: 2px solid var(--hospital-green);
             padding: 5px 10px 5px 10px;
-            border-radius: 30px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        &--icon::before {
+            color: var(--verde-azul-oscuro);
         }
     }
+ }
+
+ .rrsslink {
+    color: var(--verde-azul-oscuro);
  }

@@ -1,7 +1,11 @@
 .license {
     font-family: var(--brand-font);
-    color: var(--grisoscuro);
+    color: var(--grisclaro);
     font-size: small;
+
+    @media screen and (width> 1019px) {
+        font-size: 15px;
+    }
 }
 
 .footer {
