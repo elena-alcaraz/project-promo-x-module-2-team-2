@@ -1,16 +1,13 @@
 
 
-.fill {
- 
- border-top: solid 1px var(--gunmetal);
 
-} 
 
-form {
-  
+.fill__section {
+
     border: none;
-    
+    padding: 20px 20px 20px 20px;
 }
+
 
 .fill__head {
   
@@ -46,7 +43,6 @@ padding-top: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding: 20px 20px 20px 20px;
     color: var(--gunmetal);
     
    
