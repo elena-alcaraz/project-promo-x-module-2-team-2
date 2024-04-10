@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    font-weight: 600;
     color: var(--gunmetal);
     font-family: var(--brand-font);
 
@@ -23,16 +24,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     padding-top: 10px;
-    padding-left: 20px;
+    
     padding-right: 20px;
+
+    .fa-keyboard {
+        color: var(--dull-orange);
+        font-size: 18px;
+    }
    
 }
 
 .upDown {
 
-margin-right: 10px;
+margin-right: 5px;
 padding-top: 10px;
 }
 
@@ -44,6 +50,7 @@ padding-top: 10px;
     justify-content: center;
     align-items: left;
     color: var(--gunmetal);
+    padding-top: 20px;
     
    
     label {
@@ -79,6 +86,7 @@ padding-top: 10px;
     gap: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 .button {
@@ -98,4 +106,6 @@ padding-top: 10px;
     border: solid 1px #a2deaf;
     width: 30px;
     height: 30px;
+    background-size: cover;
+    background-position: center;
 }
