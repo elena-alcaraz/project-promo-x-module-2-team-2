@@ -5,6 +5,7 @@
   box-sizing: border-box;
   border: none;
   margin-bottom: 25px;
+
 }
 
 .title {
@@ -12,7 +13,11 @@
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   text-align: center;
-  padding: 27px 20px;
+  /*padding: 27px 20px;*/
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 27px;
+  padding-bottom: 20px;
 }
 
 .iconObj {
@@ -123,4 +128,16 @@
 
 .lightgreyblue {
   background-color: #a0c0cf;
+}
+
+
+  @media screen and (min-width: 768px){
+    
+  }
+  
+  @media screen and (min-width: 1024px){
+
+ 
+   
+    
 }
