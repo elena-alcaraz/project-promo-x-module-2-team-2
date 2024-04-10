@@ -2,8 +2,9 @@
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     height: 80vh;
+
     @media screen and (min-width: 768px){
         height: 90vh;
     }
@@ -12,25 +13,33 @@
         width: 250px;
         height: 65px;
         margin: 55px 35px 35px 35px;
+
+        @media screen and (min-width: 768px){
+        width: 419px;
+        height: 105px;
+        margin-top: 100px;
+        }
     }
     &__title{
-        margin-top: 30px;
-        color: #e17334; 
+        margin-top: 10px;
+        color: var(--dull-orange); 
         font-family: "Merriweather", serif;
         font-weight: 700;
         font-style: normal; 
-        font-size: 25px;  
+        font-size: 24px;  
+
         @media screen and (min-width: 768px){
-            font-size: 38px;
+            font-size: 24px;
         }
     }
     &__text{
         text-align: center;
         font-family: var(--brand-font);
-        color: #114e4e;
+        color: var(--verde-azul-oscuro);
         margin-bottom: 20px;
+
         @media screen and (min-width: 768px){
-            font-size: 25px;
+            font-size: 16px;
         }
     }
     &__box {
@@ -45,37 +54,42 @@
         border-radius: 4px;
         width: 270px;
         height: 75px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+
         @media all and (min-width: 768px){
             width: 325px;
             height: 85px;
-            margin-top: 30px;
+            margin-top: 0px;
+            margin-bottom: 120px;
         }
     &--icon {
         font-size: 22px;
-        color: #e17334;
+        color: var(--dull-orange);
+
         @media all and (min-width: 768px){
                 font-size: 28px;
         }
     }
     &--text {
         font-size: 12.8px;
-        color: #54585a;
+        color: var(--gunmetal);
         font-family: var(--brand-font);
-         @media all and (min-width: 768px){
-                    font-size: 25px;
+         
+        @media all and (min-width: 768px){
+                    font-size: 16px;
         }
     }
     }
-    
 } 
    
 .button-start{
     width: 129px;
     height: 42px;
-    margin: 38px 75px 0 65px;    
+    margin: 38px 75px 0 65px;        
     padding: 10px 20px;
     border-radius: 21px;
-    background-color: #438792; 
+    background-color: var(--dirty-blue); 
     color: white; 
     text-decoration: none; 
     text-align: center; 
@@ -93,13 +107,12 @@
         padding: 40px;
     }    
 }
-.awesome{
+.landing-license{
     font-family: var(--brand-font);
-    color: #d8d8d8;
+    color: var(--grisclaro);
     margin-bottom: 12px;
 }
 .logo-footer{
     width: 140px;
     padding: 10px;
-    
 }
