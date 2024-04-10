@@ -3,12 +3,31 @@
     font-family: var(--brand-font);
     padding: 38px 35px 40px 45px;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 768px){
+        border-radius: 15px;
+        width: 50vw;
+    }
 
-        width: 70vw;
-       
+    @media screen and (min-width: 1024px){
+        width: 70vw; 
         
     }
+}
+
+.btnandcard {
+
+    @media screen and (min-width: 768px){
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+    }
+    
+    @media screen and (min-width: 1024px){
+        margin-top: 30%;
+    }
+
 }
 
 .resetbutton {
@@ -21,8 +40,17 @@
     border-radius: 20px;
     color: var(--grisoscuro);
     margin-bottom: 20px;
-    
 
+    @media screen and (min-width: 768px){
+        transform: translate(-110px);
+
+    }
+
+    @media screen and (min-width: 768px){
+        transform: translate(-130px);
+
+    }
+    
     &__icon {
         padding: 3px;   
     }
@@ -41,6 +69,14 @@
     background-color: white;
     padding-top: 10px;
 
+    @media screen and (min-width: 768px){
+        width: 320px;
+    }
+
+    @media screen and (width> 1023px) {
+        width: 350px;
+    }
+ 
     &__info {
         font-family: var(--montserrat);
         line-height: 25px;
@@ -63,8 +99,21 @@
         }
     }
     
+    &__imgcontainer {
+        overflow: hidden;
+        position: relative;
+        /* max-height: 250px; */
+    }
+
     &__img {
         width: 100%;
+        height: auto;
+        display: block;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        object-position: center;
+        top: 0;
+        left: 0; 
     }
 }
       
@@ -73,7 +122,7 @@
     height: 30px;
     padding-top: 10px;
     padding-bottom: 50px;
-    padding-left: 20px;
+    margin-left: 7px;
 
     &__icons {
         list-style: none;
