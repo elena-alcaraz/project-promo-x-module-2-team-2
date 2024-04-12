@@ -6,6 +6,7 @@ const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedin');
 const githubPreview = document.querySelector('.js__preview_github');
 
+
 form.addEventListener('input', (event) => {
     event.preventDefault();
     const input = event.target.id;
