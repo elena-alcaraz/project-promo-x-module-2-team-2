@@ -14,14 +14,13 @@ function changePalette(event) {
     cardColor.classList.remove('palette1', 'palette2', 'palette3');
     
 
-    if (valueInput === 1) {
+    if (valueInput === '1') {
         cardColor.classList.add('palette1');
 
-    } else if (valueInput === 2) {
-        
+    } else if (valueInput === '2') {
         cardColor.classList.add('palette2');
 
-    } else {(valueInput === 3) 
+    } else {
         cardColor.classList.add('palette3');
   }
 
