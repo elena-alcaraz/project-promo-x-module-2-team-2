@@ -82,10 +82,10 @@
         line-height: 25px;
         margin-top: 20px;
         margin-bottom: 20px;
-        border-left: 5px solid var(--dirty-blue);
+        /* border-left: 5px solid var(--dirty-blue); */
 
         &--name {
-            color: var(--verde-azul-oscuro);
+            /* color: var(--verde-azul-oscuro); */
             font-size: 20px;
             margin-left: 20px;
             font-weight: 700;
@@ -93,7 +93,7 @@
         }
 
         &--description {
-            color: var(--grisoscuro);
+            /* color: var(--grisoscuro); */
             font-weight: 500;
             margin-left: 20px;
         }
@@ -131,7 +131,7 @@
     
         &--icon {
             text-align: center;
-            border: 2px solid var(--hospital-green);
+            /* border: 2px solid var(--hospital-green); */
             padding: 5px 10px 5px 10px;
             border-radius: 50px;
             text-decoration: none;
@@ -143,6 +143,71 @@
     }
  }
 
- .rrsslink {
-    color: var(--verde-azul-oscuro);
- }
+ /* .rrsslink {
+    /* color: var(--verde-azul-oscuro);
+  } */
+ 
+
+/*  crear selector que tenga anidados los estilos */
+.palette1 {
+    & .card__info {
+        border-left: 5px solid var(--dirty-blue);
+    }
+    & .card__info--name {
+        color: var(--verde-azul-oscuro);
+    }
+    & .card__info--description {
+        color: var(--grisoscuro);
+    }
+    & .rrss__icons--icon {
+        border: 2px solid var(--hospital-green);
+    }
+    & .rrss__icons--icon::before {
+        color: var(--verde-azul-oscuro);
+    }
+    .rrsslink {
+        color: var(--verde-azul-oscuro);
+    }
+}
+
+.palette2 {
+    & .card__info {
+        border-left: 5px solid #420101;
+    }
+    & .card__info--name {
+        color: #420101;
+    }
+    & .card__info--description {
+        color: var(--rustyred);
+    }
+    & .rrss__icons--icon {
+        border: 2px solid var(--tomato);
+    }
+    & .rrss__icons--icon::before {
+        color: var(--driedblood);
+    }
+    .rrsslink {
+        color: var(--driedblood);
+    }
+}
+
+.palette3 {
+    & .card__info {
+        border-left: 5px solid #3e5b65;
+    }
+    & .card__info--name {
+        color: var(--slade);
+    }
+    & .card__info--description {
+        color: var(--faded-orange);
+    }
+    & .rrss__icons--icon {
+        border: 2px solid var(--light-grey-blue);
+    }
+    & .rrss__icons--icon::before {
+        color: var(--slade);
+    }
+    .rrsslink {
+        color: var(--slade);
+    }
+}
