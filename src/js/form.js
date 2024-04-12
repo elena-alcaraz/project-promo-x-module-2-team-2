@@ -6,8 +6,7 @@ const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedin');
 const githubPreview = document.querySelector('.js__preview_github');
 
-
-form.addEventListener('input', (event) => {
+function formChange (event) {
     event.preventDefault();
     const input = event.target.id;
     const valueInput = event.target.value;
@@ -26,7 +25,7 @@ form.addEventListener('input', (event) => {
     } else if (input === 'github') {
         githubPreview.href = valueInput;
     }
+}
+//hacer otra función con la paleta. Dar value a todas los input de las paletas (1, 2, 3). Aplicar anidación en css. Seleccionar los elementos del cardpreview, añadir la clase que tiene los colores 
+form.addEventListener('input', formChange);
 
-    
-  
-});
