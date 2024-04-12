@@ -5,6 +5,29 @@ const mobilePreview = document.querySelector('.js__preview_mobile');
 const emailPreview = document.querySelector('.js__preview_email');
 const linkedinPreview = document.querySelector('.js__preview_linkedin');
 const githubPreview = document.querySelector('.js__preview_github');
+const colors = document.querySelector('.js-colors');
+const cardColor = document.querySelector('.js-cardp');
+
+function changePalette(event) {
+    const input = event.target.id;
+    const valueInput = event.target.value;
+    cardColor.classList.remove('palette1', 'palette2', 'palette3');
+    
+
+    if (valueInput === 1) {
+        cardColor.classList.add('palette1');
+
+    } else if (valueInput === 2) {
+        
+        cardColor.classList.add('palette2');
+
+    } else {(valueInput === 3) 
+        cardColor.classList.add('palette3');
+  }
+
+} 
+
+colors.addEventListener('change', changePalette);
 
 function formChange (event) {
     event.preventDefault();
@@ -25,6 +48,7 @@ function formChange (event) {
     } else if (input === 'github') {
         githubPreview.href = valueInput;
     }
+
 }
 //hacer otra función con la paleta. Dar value a todas los input de las paletas (1, 2, 3). Aplicar anidación en css. Seleccionar los elementos del cardpreview, añadir la clase que tiene los colores 
 form.addEventListener('input', formChange);
