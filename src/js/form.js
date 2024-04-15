@@ -47,6 +47,8 @@ function formChange (event) {
     const valueInput = event.target.value;
     console.log(input);
 
+    data[input]=valueInput;
+    
     if (input === 'name') {
         namePreview.innerHTML = valueInput;
     } else if (input === 'work') {
