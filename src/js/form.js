@@ -8,6 +8,19 @@ const githubPreview = document.querySelector('.js__preview_github');
 const colors = document.querySelector('.js-colors');
 const cardColor = document.querySelector('.js-cardp');
 
+const data = {
+    palette: 1,
+    name: 'Nombre Apellido',
+    job: 'Front-end developer',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+    
+
+};
+
 function changePalette(event) {
     const input = event.target.id;
     const valueInput = event.target.value;
