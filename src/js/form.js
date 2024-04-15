@@ -10,8 +10,8 @@ const cardColor = document.querySelector('.js-cardp');
 
 const data = {
     palette: 1,
-    name: 'Nombre Apellido',
-    job: 'Front-end developer',
+    name: '',
+    job: '',
     phone: '',
     email: '',
     linkedin: '',
@@ -48,7 +48,8 @@ function formChange (event) {
     console.log(input);
 
     data[input]=valueInput;
-    
+    console.log(data);
+
     if (input === 'name') {
         namePreview.innerHTML = valueInput;
     } else if (input === 'work') {
