@@ -52,9 +52,9 @@ function formChange (event) {
 
     if (input === 'name') {
         namePreview.innerHTML = valueInput;
-    } else if (input === 'work') {
+    } else if (input === 'job') {
         jobPreview.innerHTML = valueInput;
-    } else if (input === 'mobile') {
+    } else if (input === 'phone') {
         mobilePreview.innerHTML = valueInput;
     } else if (input === 'email') {
         emailPreview.href = valueInput;
