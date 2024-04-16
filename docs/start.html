@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adalab Web Starter Kit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f67677b7d2.js" crossorigin="anonymous"></script>
+    
+    
+    
+    <link rel="stylesheet" href="./assets/main-c7a54740.css">
+  </head>
+
+  <body>
+
+<header class="page__header">
+  <div class="logoawesome">
+    <img src="./images/logo-awesome-profile-cards.svg" class="logoawesome__image" alt="logo Awesome Cards">
+  </div>
+</header>
+
+
+ <main class="media__main">
+
+  
+  <section class="cardpreview">
+    <div class="btnandcard">
+    <button class="resetbutton js_reset">
+        <i class="fa-regular fa-trash-can resetbutton__icon"></i>
+        <p class="resetbutton__p">RESET</p>
+    </button>
+    <div class="card palette1 js-cardp">
+        <div class="card__info">
+            <h2 class="card__info--name js__preview_name">Nombre Apellido</h2>
+            <h5 class="card__info--description js__preview_job">Front-end developer</h5>
+        </div>
+        <div class="card__imgcontainer">
+            <img class="card__img js__profile-image" src="./images/perrito-trabajador.jpg" alt="imagen de ejemplo para tarjeta">
+        </div>
+        <nav class="rrss">
+            <ul class="rrss__icons">
+                <li class="rrss__icons--icon js__preview_mobile"><a class="rrsslink" href=""><i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li class="rrss__icons--icon js__preview_mail"><a class="rrsslink" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="rrss__icons--icon js__preview_linkedin"><a class="rrsslink" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="rrss__icons--icon js__preview_github"><a class="rrsslink" href=""><i class="fa-brands fa-github-alt"></i></a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    </div>
+</section>
+
+  
+
+  
+  <form action="" class=" form__start js_form">
+      <fieldset class="selectDesign">
+    <div class="title">
+        <div class="iconObj">
+            <i class="fa-regular fa-object-ungroup orangeRegular"></i>
+        </div>
+
+        <legend class="titleText">DISEÑA</legend>
+
+        <div class="chevronSolid">
+            <i class="fa-solid fa-chevron-down hidden fSolid"></i>
+            <i class="fa-solid fa-chevron-up fSolid"></i>
+        </div>
+    </div>
+
+    <div class="colors js-colors">
+        <span class="colorsText">COLORES</span>
+
+        <div class="palet">
+            <div class="paletItem">
+                <div class="paletItemGrid">
+                    <span class="paletItemGridFirst">
+                        <input id="palettOne" type="radio" name="palette" value="1" checked="true"/>
+                    </span>
+                    <div class="columnsPalet">
+                        <span class="darkGreen"></span>
+                        <span class="dirtyBlue"></span>
+                        <span class="hospitalGreen"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="paletItem">
+                <div class="paletItemGrid">
+                    <span class="paletItemGridFirst">
+                        <input id="palettTwo" type="radio" name="palette" value="2" />
+                    </span>
+                    <div class="columnsPalet">
+                        <span class="driedBlood"></span>
+                        <span class="rustyRed"></span>
+                        <span class="tomato"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="paletItem">
+                <div class="paletItemGrid">
+                    <span class="paletItemGridFirst">
+                        <input id="palettthree" type="radio" name="palette" value="3"/>
+                    </span>
+                    <div class="columnsPalet">
+                        <span class="slate"></span>
+                        <span class="faded"></span>
+                        <span class="lightgreyblue"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<div class="line"></div>
+        <fieldset class="fill__section">
+    
+            <div class="fill__head">
+            
+                     <div class="fill__head-tittle">
+                        <i class="fa-regular fa-keyboard"></i>
+                        <legend class="rellena">RELLENA</legend>
+        
+                     </div>
+                       <span class="upDown">
+                     <i class="fa-solid fa-chevron-down hidden"></i>
+                     <i class="fa-solid fa-chevron-up"></i>
+                      </span>
+           
+        
+            </div>
+
+     
+          <div class="info__personal">
+      
+            <label for="name" class="label_form">Nombre completo</label>
+            <input  id="name" type="text" name="fullname" placeholder="Ej: Ramón García" value=""> <br>
+      
+
+      
+            <label for="job" class="label_form">Puesto</label>
+            <input id="job" type="text" name="position" placeholder="Ej: Full stack developer" value=""> <br>
+     
+
+            <p>Imagen de perfil</p>
+             <div class="image__button">
+                <label for="photo" class="button">Añadir imagen</label>
+
+                <input type="file" id="photo" class="hidden js__profile-upload-btn" name="photo" accept="image/*" value="">
+                <span class="preview js__profile-preview"></span>
+             </div> <br>
+         
+
+            <label for="email" class="label_form">Email</label>
+            <input  id="email" type="email" placeholder="Ej: ramon@gmail.com" value=""> <br>
+      
+
+            <label for="phone" class="label_form">Teléfono</label>
+            <input id="phone" type="tel" name="telefono" placeholder="Ej: 555 555 555" value=""> <br>
+     
+       
+            <label for="linkedin" class="label_form">Linkedin</label>
+            <input id="linkedin"  type="text" placeholder="Ej:linkedin.com/in/Ramón" value=""> <br>
+     
+
+            <label for="github" class="label_form">GitHub</label>
+            <input id="github" type="text" placeholder="Ej: @Ramon" value=""> <br>
+    
+          </div>
+    
+   </fieldset>
+   <div class="line"></div>
+
+    
+
+      <fieldset class="share">
+    <div class="share_head">
+        <div class="share_head-title">
+            <i class="fa-solid fa-share-nodes"></i>
+            <legend>COMPARTE</legend>
+        </div>
+        
+        <i class="fa-solid fa-chevron-down hidden"></i>
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <div class="share_createcard">
+        <button type="submit" class="share_createcard-button">
+            <i class="fa-regular fa-address-card"></i>
+            CREAR TARJETA
+        </button>
+    </div>
+
+    <div class="share_withx">
+        <p class="share_withx-text">La tarjeta ha sido creada:</p>
+        <a href="#" class="share_withx-url">url</a>
+        <button type="submit" class="share_withx-button">
+            <i class="fa-brands fa-x-twitter"></i>
+            Compartir en X
+        </button>
+    </div>
+</fieldset>
+
+  </form>
+  
+
+ </main>
+
+<footer class="footer">
+    <p class="license">Awesome profile-cards ©2024</p>
+    <img class="logo-adalab" src="./images/logo-adalab.png" alt="Logo Adalab">
+</footer>
+
+<script src="./js/main.js"></script>
+
+  </body>
+</html>
