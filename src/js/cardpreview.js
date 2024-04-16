@@ -24,7 +24,8 @@ function resetForm(event)  {
     jobPreview.innerHTML = "Front-end developer";
     cardColor.classList.remove('palette2', 'palette3');
     cardColor.classList.add('palette1');
-    profileImage.src = "../images/perrito-trabajador.jpg";
+    //nos ha funcionado por un momento con profileImage.src = "../images/perrito-trabajador.jpg"; pero ya no. Probando rutas.
+    profileImage.src = "./images/perrito-trabajador.jpg";
     dataReset();
     console.log(data);
 };
