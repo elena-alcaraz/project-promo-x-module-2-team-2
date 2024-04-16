@@ -24,7 +24,7 @@ function resetForm(event)  {
     jobPreview.innerHTML = "Front-end developer";
     cardColor.classList.remove('palette2', 'palette3');
     cardColor.classList.add('palette1');
-    
+    profileImage.src = "../images/perrito-trabajador.jpg";
     dataReset();
     console.log(data);
 };
