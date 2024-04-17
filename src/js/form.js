@@ -17,8 +17,6 @@ const data = {
     linkedin: '',
     github: '',
     photo: '',
-    
-
 };
 
 function changePalette(event) {
@@ -55,7 +53,8 @@ function formChange (event) {
     } else if (input === 'job') {
         jobPreview.innerHTML = valueInput;
     } else if (input === 'phone') {
-        mobilePreview.innerHTML = valueInput;
+        mobilePreview.href = valueInput;
+        console.log("telefono");
     } else if (input === 'email') {
         emailPreview.href = valueInput;
     } else if (input === 'linkedin') {
