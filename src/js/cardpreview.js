@@ -25,7 +25,7 @@ function resetForm(event)  {
     cardColor.classList.remove('palette2', 'palette3');
     cardColor.classList.add('palette1');
     profileImage.src = "./images/perrito-trabajador.jpg";
-    //profilePreview = ??
+    profilePreview.style.backgroundImage = '';
     dataReset();
     console.log(data);
 };
