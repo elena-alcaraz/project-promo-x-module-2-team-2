@@ -1,4 +1,6 @@
 .cardpreview {
+    display: flex;
+    justify-content: center;
     background-color: var(--silver);
     font-family: var(--brand-font);
     padding: 38px 35px 40px 45px;
@@ -21,12 +23,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50%;
+        
     }
     
-    @media screen and (min-width: 1024px){
+    /*@media screen and (min-width: 1024px){
         margin-top: 25%;
-    }
+    } */
 
 }
 

@@ -23,11 +23,9 @@
 .fill__head-tittle {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 12px;
-    padding-top: 10px;
-    
     padding-right: 20px;
+    align-items: center;
 
     .fa-keyboard {
         color: var(--dull-orange);
@@ -38,7 +36,7 @@
 
 .upDown {
 
-margin-right: 5px;
+
 padding-top: 10px;
 }
 

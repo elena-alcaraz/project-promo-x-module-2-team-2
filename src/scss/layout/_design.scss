@@ -1,10 +1,16 @@
 .selectDesign {
-  height: 200px;
+  
   display: grid;
-  grid-template-rows: 1fr 10fr;
   box-sizing: border-box;
   border: none;
   margin-bottom: 25px;
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 0;
+    margin-bottom: 0;
+    
+  }
 }
 
 .title {
@@ -77,6 +83,7 @@
 .palet {
   display: grid;
   grid-template-rows: auto auto auto;
+  gap: 10px;
 
 }
 
@@ -144,17 +151,12 @@
     .title {
       padding-top: 10px;
       padding-left: 20px;
-      padding-right: 27px;
+      padding-right: 20px;
       padding-bottom: 20px;
     }
-  }
+  } 
   
-  @media screen and (min-width: 1024px){
 
- 
-   
-    
-}
 .line {
   border-top: 1px solid;
   border-color: #d8d8d8;
