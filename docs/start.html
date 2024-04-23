@@ -20,14 +20,14 @@
     
     
     
-    <link rel="stylesheet" href="./assets/main-2210cfae.css">
+    <link rel="stylesheet" href="./assets/main-0fab24c2.css">
   </head>
 
   <body>
 
 <header class="page__header">
   <div class="logoawesome">
-    <img src="./images/logo-awesome-profile-cards.svg" class="logoawesome__image" alt="logo Awesome Cards">
+    <a href="../index.html"><img src="./images/logo-awesome-profile-cards.svg" class="logoawesome__image" alt="logo Awesome Cards"></a>
   </div>
 </header>
 
@@ -51,11 +51,10 @@
         </div>
         <nav class="rrss">
             <ul class="rrss__icons">
-                <li class="rrss__icons--icon js__preview_mobile"><a class="rrsslink" href=""><i class="fa-solid fa-mobile-screen"></i></a></li>
-                <li class="rrss__icons--icon js__preview_mail"><a class="rrsslink" href=""><i class="fa-solid fa-envelope"></i></a></li>
-                <li class="rrss__icons--icon js__preview_linkedin"><a class="rrsslink" href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li class="rrss__icons--icon js__preview_github"><a class="rrsslink" href=""><i class="fa-brands fa-github-alt"></i></a></li>
-                
+                <li class="rrss__icons--icon"><a class="rrsslink js__preview_mobile" href=""><i class="fa-solid fa-mobile-screen"></i></a></li>
+                <li class="rrss__icons--icon"><a class="rrsslink js__preview_mail" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="rrss__icons--icon"><a class="rrsslink js__preview_linkedin" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="rrss__icons--icon"><a class="rrsslink js__preview_github" href=""><i class="fa-brands fa-github-alt"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -66,21 +65,20 @@
 
   
   <form action="" class=" form__start js_form">
-      <fieldset class="selectDesign">
-    <div class="title">
+      <fieldset class="selectDesign collapsable--close form__box">
+    <div class="title js_collapsable-header">
         <div class="iconObj">
             <i class="fa-regular fa-object-ungroup orangeRegular"></i>
+            <legend class="titleText">DISEÑA</legend>
         </div>
 
-        <legend class="titleText">DISEÑA</legend>
-
         <div class="chevronSolid">
-            <i class="fa-solid fa-chevron-down hidden fSolid"></i>
-            <i class="fa-solid fa-chevron-up fSolid"></i>
+            
+            <i class="fa-solid fa-chevron-up fSolid collapsable__icon--right"></i>
         </div>
     </div>
 
-    <div class="colors js-colors">
+    <div class="colors js-colors collapsable__content">
         <span class="colorsText">COLORES</span>
 
         <div class="palet">
@@ -124,17 +122,17 @@
     </div>
 </fieldset>
 <div class="line"></div>
-        <fieldset class="fill__section">
+        <fieldset class="fill__section collapsable--close form__box">
     
-            <div class="fill__head">
+            <div class="fill__head js_collapsable-header">
             
                      <div class="fill__head-tittle">
                         <i class="fa-regular fa-keyboard"></i>
                         <legend class="rellena">RELLENA</legend>
         
                      </div>
-                       <span class="upDown">
-                     <i class="fa-solid fa-chevron-down hidden"></i>
+                       <span class="upDown collapsable__icon--right">
+                     
                      <i class="fa-solid fa-chevron-up"></i>
                       </span>
            
@@ -142,7 +140,7 @@
             </div>
 
      
-          <div class="info__personal">
+          <div class="info__personal collapsable__content">
       
             <label for="name" class="label_form">Nombre completo</label>
             <input  id="name" type="text" name="fullname" placeholder="Ej: Ramón García" value=""> <br>
@@ -184,18 +182,19 @@
 
     
 
-      <fieldset class="share">
-    <div class="share_head">
+      <fieldset class="share collapsable--close form__box">
+    <div class="share_head js_collapsable-header">
         <div class="share_head-title">
             <i class="fa-solid fa-share-nodes"></i>
             <legend>COMPARTE</legend>
         </div>
         
-        <i class="fa-solid fa-chevron-down hidden"></i>
-        <i class="fa-solid fa-chevron-up"></i>
+        <div class="collapsable__icon--right">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
     </div>
 
-    <div class="share_createcard">
+    <div class="share_createcard collapsable__content">
         <button type="submit" class="share_createcard-button">
             <i class="fa-regular fa-address-card"></i>
             CREAR TARJETA
