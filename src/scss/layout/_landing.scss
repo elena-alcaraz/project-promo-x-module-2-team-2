@@ -5,12 +5,11 @@
     align-items: center;    
     height: 80vh;
     padding-bottom: 40px;
-    padding-top: 80px;
+    padding-top: 30px;
 
     @media screen and (min-width: 768px){
-        height: 90vh;
-        padding-bottom: 100px;
-        padding-top: 80px;
+        height: 90vh;        
+    
     }
 
     &__img {
@@ -22,14 +21,14 @@
         @media screen and (min-width: 768px){
         width: 600px;
         height: 200px;
-        margin-top: 100px;
+        margin-top: 70px;
         margin-bottom: 70px;
         }
     }
     &__title{
-        margin-top: 10px;
+        margin-top: -40px;
         color: var(--dull-orange); 
-        font-family: "Merriweather", serif;
+        font-family: var(--brand-font);
         font-weight: 700;
         font-style: normal; 
         font-size: 24px;  
@@ -98,7 +97,7 @@
     padding: 10px 20px;
     border-radius: 21px;
     background-color: #fed82e;    
-    color: #56bdff; 
+    color: white; 
     text-decoration: none; 
     text-align: center; 
     font-size: 16px;
@@ -111,8 +110,7 @@
 .footer{    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 20vh;
+    align-items: center;    
 
     @media all and (min-width: 768px){
         flex-direction: row;
@@ -122,11 +120,14 @@
         padding-right: 20px;
     }    
 }
+
 .landing-license{
     font-family: var(--brand-font);
     color: var(--grisclaro);
+    font-size: small;
     margin-bottom: 12px;
 }
+
 .logo-footer{
     width: 140px;
     padding: 10px;
