@@ -1,13 +1,15 @@
 .cardpreview {
     display: flex;
     justify-content: center;
-    background-color: var(--silver);
+    background-image: linear-gradient(to right, #CDFFD8, #94B9FF);
     font-family: var(--brand-font);
     padding: 38px 35px 40px 45px;
 
     @media screen and (min-width: 768px){
         border-radius: 15px;
         width: 50vw;
+        background-image: none;
+        background-color: #fffAC8;
     }
 
     @media screen and (min-width: 1024px){
@@ -38,9 +40,9 @@
     align-items: center;
     justify-content: space-between;
     border: solid white;
-    background-color: var(--silver);
+    background-color: #f64f7d;
     border-radius: 20px;
-    color: var(--grisoscuro);
+    color: white;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px){
@@ -58,7 +60,7 @@
     }
 
     &__icon::before{
-        color: var(--grisoscuro);
+        color: white;
     }
 
     &__p {
