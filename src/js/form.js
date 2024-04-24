@@ -8,8 +8,42 @@ const githubPreview = document.querySelector('.js__preview_github');
 const colors = document.querySelector('.js-colors');
 const cardColor = document.querySelector('.js-cardp');
 
+//variables para el share
+const createBtn = document.querySelector('.js_create_button');
+const shareLinkContainer = document.querySelector('.js_shareLinkContainer');
+const shareLink = document.querySelector('.js_shareLink');
+const shareErrorContainer = document.querySelector('.js_shareErrorContainer');
+
+function handleClickCreate(event) {
+    event.preventDefault(); 
+
+    fetch('https://dev.adalab.es/api/card/',
+    {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(dataResponse => {
+        console.log(dataResponse);
+
+        if (dataResponse.success) {
+
+            shareLinkContainer.classList.remove('hidden');
+
+            shareLink.href = dataResponse.cardURL; 
+            shareLink.innerHTML = dataResponse.cardURL; 
+        } else {
+            shareErrorContainer.classList.remove('hidden');
+            shareErrorContainer.innerHTML = dataResponse.error;
+        }
+    })
+};
+
+createBtn.addEventListener('click', handleClickCreate);
+
 const data = {
-    palette: 1,
+    palette: '1',
     name: '',
     job: '',
     phone: '',
