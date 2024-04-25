@@ -1,4 +1,4 @@
-const form= document.querySelector('.js_form');
+const form = document.querySelector('.js_form');
 const namePreview = document.querySelector('.js__preview_name');
 const jobPreview = document.querySelector('.js__preview_job');
 const mobilePreview = document.querySelector('.js__preview_mobile');
@@ -12,32 +12,32 @@ const cardColor = document.querySelector('.js-cardp');
 const createBtn = document.querySelector('.js_create_button');
 const shareLinkContainer = document.querySelector('.js_shareLinkContainer');
 const shareLink = document.querySelector('.js_shareLink');
+const shareToX = document.querySelector('.js_share_to_X')
 const shareErrorContainer = document.querySelector('.js_shareErrorContainer');
 
 function handleClickCreate(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     fetch('https://dev.adalab.es/api/card/',
-    {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(dataResponse => {
-        console.log(dataResponse);
+        {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(dataResponse => {
+            console.log(dataResponse);
 
-        if (dataResponse.success) {
-
-            shareLinkContainer.classList.remove('hidden');
-
-            shareLink.href = dataResponse.cardURL; 
-            shareLink.innerHTML = dataResponse.cardURL; 
-        } else {
-            shareErrorContainer.classList.remove('hidden');
-            shareErrorContainer.innerHTML = dataResponse.error;
-        }
-    })
+            if (dataResponse.success) {
+                shareLinkContainer.classList.remove('hidden');
+                shareLink.href = dataResponse.cardURL;
+                shareLink.innerHTML = dataResponse.cardURL;
+                shareToX.href += dataResponse.cardURL;
+            } else {
+                shareErrorContainer.classList.remove('hidden');
+                shareErrorContainer.innerHTML = dataResponse.error;
+            }
+        })
 };
 
 createBtn.addEventListener('click', handleClickCreate);
@@ -57,7 +57,7 @@ function changePalette(event) {
     const input = event.target.id;
     const valueInput = event.target.value;
     cardColor.classList.remove('palette1', 'palette2', 'palette3');
-    
+
 
     if (valueInput === '1') {
         cardColor.classList.add('palette1');
@@ -67,19 +67,19 @@ function changePalette(event) {
 
     } else {
         cardColor.classList.add('palette3');
-  }
+    }
 
-} 
+}
 
 colors.addEventListener('change', changePalette);
 
-function formChange (event) {
+function formChange(event) {
     event.preventDefault();
     const input = event.target.id;
     const valueInput = event.target.value;
     console.log(input);
 
-    data[input]=valueInput;
+    data[input] = valueInput;
     console.log(data);
 
     if (input === 'name') {

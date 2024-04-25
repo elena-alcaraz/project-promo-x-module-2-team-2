@@ -5,20 +5,20 @@ const parentCollapse = document.querySelectorAll('.form__box');
 
 const handleCollapsable = (event) => {
   const clickedHeader = event.currentTarget;
-  const clickedParent =clickedHeader.parentNode;
+  const clickedParent = clickedHeader.parentNode;
 
   for (const parent of parentCollapse) {
     if (parent === clickedParent) {
       parent.classList.remove('collapsable--close');
     } else {
-        parent.classList.add('collapsable--close');
+      parent.classList.add('collapsable--close');
     }
   }
 
-  
+
 };
 
 for (const header of collapsableHeader) {
   header.addEventListener('click', handleCollapsable);
-   
+
 }
