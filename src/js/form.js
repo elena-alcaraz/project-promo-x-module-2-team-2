@@ -104,6 +104,8 @@ const getPaletteDataKeyFromInputId = (inputId) => {
     if (inputId.includes('palette')) {
         return 'palette'
     }
+
+    return inputId;
 };
 
 //hacer otra función con la paleta. Dar value a todas los input de las paletas (1, 2, 3). Aplicar anidación en css. Seleccionar los elementos del cardpreview, añadir la clase que tiene los colores 
