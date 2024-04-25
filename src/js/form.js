@@ -75,7 +75,8 @@ colors.addEventListener('change', changePalette);
 
 function formChange(event) {
     event.preventDefault();
-    const input = event.target.id;
+    const inputId = event.target.id;
+    const input = getPaletteDataKeyFromInputId(inputId);
     const valueInput = event.target.value;
     console.log(input);
 
@@ -98,6 +99,13 @@ function formChange(event) {
     }
 
 }
+
+const getPaletteDataKeyFromInputId = (inputId) => {
+    if (inputId.includes('palette')) {
+        return 'palette'
+    }
+};
+
 //hacer otra función con la paleta. Dar value a todas los input de las paletas (1, 2, 3). Aplicar anidación en css. Seleccionar los elementos del cardpreview, añadir la clase que tiene los colores 
 form.addEventListener('input', formChange);
 
