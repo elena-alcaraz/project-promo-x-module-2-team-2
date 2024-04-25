@@ -29,6 +29,8 @@ function handleClickCreate(event) {
             console.log(dataResponse);
 
             if (dataResponse.success) {
+                createBtn.classList.remove('share_createcard-button');
+                createBtn.classList.add('share_createcard-buttonclicked');
                 shareLinkContainer.classList.remove('hidden');
                 shareLink.href = dataResponse.cardURL;
                 shareLink.innerHTML = dataResponse.cardURL;
