@@ -42,19 +42,27 @@
             padding-left: 18px;
             padding-right: 18px;
             border-radius: 12px;
-            border: none;
+            border: solid white;
             background-color: var(--dull-orange);
             color: white;
             font-size: 18px;
-            box-shadow: 0 1px 6px var(--grisoscuro);
-
+            
+            
             .fa-address-card {
                 color: white;
                 font-size: 18px;
             }
+
+            
         }
     }
-
+    @media (hover: hover) {
+        .share_createcard-button:hover {
+            transform: scale(1.1);
+        }  
+    }
+    
+    
     &_withx {
         display: flex;
         flex-direction: column;

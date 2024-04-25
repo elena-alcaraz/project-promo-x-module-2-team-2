@@ -1,6 +1,6 @@
 .logoawesome {
     display: flex;
-    margin: 50px;
+    margin: 25px;
     align-items: center;
     justify-content: center;
 
@@ -10,5 +10,6 @@
 
     @media screen and (width> 767px) {
         justify-content: flex-start;
+
     }
 }

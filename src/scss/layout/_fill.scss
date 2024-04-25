@@ -89,27 +89,33 @@ padding-top: 10px;
     gap: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: white;
-    
+    color: white;   
     
 }
 
 .button {
 
     width: 140px;
-    height: 30px;
+    height: 40px;
     background-color: #f64f7d ;
     color: white;
-    border: none;
+    border: solid white;
     border-radius: 2px;
     z-index: 9999;
     padding-left: 15px;
     padding-top: 5px;
+    
+}
+
+@media (hover: hover) {
+    .button:hover {
+        transform: scale(1.1);
+    }  
 }
 
 .preview {
 
-    border: solid 1px #a2deaf;
+    border: solid 2px #fed82e;
     width: 30px;
     height: 30px;
     background-size: cover;
