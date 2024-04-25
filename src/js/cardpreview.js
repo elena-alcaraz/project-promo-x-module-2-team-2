@@ -3,7 +3,6 @@ const btnReset = document.querySelector(".js_reset");
 
 
 function dataReset() {
-
     data.palette = 1;
     data.name = "";
     data.job = "";
@@ -13,6 +12,7 @@ function dataReset() {
     data.github = "";
     data.photo = "";
 
+    localStorage.removeItem('data');
 };
 
 
