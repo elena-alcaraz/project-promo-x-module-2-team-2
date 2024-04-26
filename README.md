@@ -41,7 +41,8 @@ En el desarrollo de esta aplicación hemos usado las siguientes tecnologías:
 
 -Permitir que a la persona usuaria pueda **crear una web con su tarjeta y compartirla por X** (anterioremente conocido comoTwitter)
 
-![Captura de Pantalla 2024-04-26 a las 11 03 53](https://github.com/elena-alcaraz/project-promo-x-module-2-team-2/assets/156465486/46243dad-5a9e-4d40-9efd-310bdc77ff49)
+![Captura de Pantalla 2024-04-26 a las 11 06 30](https://github.com/elena-alcaraz/project-promo-x-module-2-team-2/assets/156465486/891431d6-ad41-4d7f-b27d-5a62c799da38)
+
 
 
 
