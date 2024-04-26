@@ -25,7 +25,8 @@ En el desarrollo de esta aplicación hemos usado las siguientes tecnologías:
 **El proyecto consta de 2 páginas:**
 
 •	Una página landing de bienvenida
-![landing](cap1.png)
+![cap1](https://github.com/elena-alcaraz/project-promo-x-module-2-team-2/assets/156465486/5e4bbca4-b3e4-4701-991d-6b43fcc14761)
+
 
 •	Una página con la aplicación de crear tarjetas
 
