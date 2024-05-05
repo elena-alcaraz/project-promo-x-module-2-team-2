@@ -33,13 +33,41 @@ function handleClickCreate(event) {
                 shareLinkContainer.classList.remove('hidden');
                 shareLink.href = dataResponse.cardURL;
                 shareLink.innerHTML = dataResponse.cardURL;
-                shareToX.href += dataResponse.cardURL;
+                shareToX.href = `https://twitter.com/intent/tweet?text=Mira%20mi%20mi%20tarjeta%20de%20visita%20creada%20con%20Awesome%20Cards!%20${dataResponse.cardURL}`;
+                shareErrorContainer.innerHTML = "";
             } else {
-                shareErrorContainer.classList.remove('hidden');
-                shareErrorContainer.innerHTML = dataResponse.error;
+                dataError(dataResponse.error);
             }
         })
 };
+
+//error= Mandatory fields: name, job, email, linkedin, github, photo
+function dataError(error) {  
+  shareErrorContainer.innerHTML = "";
+  shareErrorContainer.classList.remove('hidden');
+  if (error.includes("name")) {
+    shareErrorContainer.innerHTML += "El campo Nombre Completo es obligatorio. <br>";
+  }
+  if (error.includes("job")) {
+    shareErrorContainer.innerHTML += "El campo Puesto es obligatorio. <br>";
+  }
+  if (error.includes("photo")) {
+    shareErrorContainer.innerHTML += "El campo Imagen de Perfil es obligatorio. <br>";
+  }
+  if (error.includes("email")) {
+    shareErrorContainer.innerHTML += "El campo Email es obligatorio. <br>";
+  }
+  if (error.includes("github")) {
+    shareErrorContainer.innerHTML += "El campo GitHub es obligatorio. <br>";
+  }
+  if (error.includes("linkedin")) {
+    shareErrorContainer.innerHTML += "El campo LinkedIn es obligatorio. <br>";
+  }
+  if (error.includes("ER_DATA_TOO_LONG")) {
+    shareErrorContainer.innerHTML += "La imagen no debe exceder los 250x250px"
+  }
+
+}
 
 createBtn.addEventListener('click', handleClickCreate);
 
