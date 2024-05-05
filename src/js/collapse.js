@@ -4,6 +4,7 @@ const collapsableHeader = document.querySelectorAll('.js_collapsable-header');
 const parentCollapse = document.querySelectorAll('.form__box');
 
 const handleCollapsable = (event) => {
+  shareErrorContainer.innerHTML = "";
   const clickedHeader = event.currentTarget;
   const clickedParent = clickedHeader.parentNode;
 
