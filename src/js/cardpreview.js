@@ -26,6 +26,7 @@ function resetForm(event)  {
     cardColor.classList.add('palette1');
     profileImage.src = "./images/beauty_girl1.png";
     profilePreview.style.backgroundImage = '';
+    shareErrorContainer.innerHTML = "";
     dataReset();
     console.log(data);
 };
